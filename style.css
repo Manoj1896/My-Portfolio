@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+body
+{
+  background: #343F4F;
+}
+/*header*/
+h3
+{
+	font-size: 32px;
+	font-weight: 400;
+	color: white;
+	border-style: dotted;
+	border-color: black;
+	border-radius: 50%;
+	border-width: thick;
+}
+a
+{
+	text-decoration: none;
+}
+.res
+{
+	margin-left: 65%;
+	background-color: transparent;
+	font-size: 32px;
+	font-weight: 400;
+	color: #FC6D6D;
+}
+.res:hover
+{
+	border-bottom: 3px solid white;
+	transition: .6s ease;
+}
+/*side navbar---------------------*/
+.sidenav {
+  height: 70%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border-radius: 35% 0 0 35%; 
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #FC6D6D;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3% 5%;
+}
+/*main=========================*/
+.wrap
+{ 	
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+.wrap .txt1
+{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrap .txt2
+{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.txt2 li
+{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide
+{
+  100%
+  {
+    top: -360px;
+  }
+}
+.txt2 li span
+{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.txt2 li span::after
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing
+{
+40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+.wrap2
+{ 	
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.list li
+{
+  list-style: none;
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+ }
+ .list li:hover
+{
+ 	cursor: pointer;
+    animation: link 3s 1;
+}
+      
+ @keyframes link
+{
+      0%{margin-left: 0;}
+      25%{margin-left: 50px; color: #FC6D6D;}
+      100%{margin-left: 0px;}
+}
+/*section1------------------*/
+h1 span
+{
+	color: white;
+	position: relative;
+	font-size: 60px;
+}
+h1 span::after
+{	
+	content: "";
+  	position: absolute;
+  	left: 0;
+  	height: 100%;
+ 	width: 100%;
+  	background: black;
+  	border-left: 2px solid #FC6D6D;
+  	animation: typing 3s steps(9) infinite;
+}
+@keyframes typing
+{
+40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+p
+{
+	color: #FC6D6D;
+	font-weight: bolder;
+	font-size: 20px;
+}
+.intro
+{
+	font-weight: bolder;
+	font-size: 36px;
+	color: #FC6D6D;
+}
+.tech1 li, .tech2 li
+{
+	color: #32cd32;
+	font-weight: bold;
+	font-size: 20px;
+    list-style: none;
+}
+.tech1
+{
+	margin-left: 50%;
+}
+.tech2
+{
+	margin-right: 15%;
+}
+.techs
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.about
+{
+	margin-left: 5%;
+}
+.para1
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.img
+{
+	margin-left: 15%;
+}
+#section2
+{
+	margin-top: 5%;
+	margin-left: 0;
+	background-color: black;
+}
+#section2 p
+{
+	color: #54545d;
+	margin-left: 5%;
+}
+
+/*section3*/
+.section3 ul
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.section3 li
+{
+	margin-left: 10%;
+	line-height: 2.5;
+	color: #54545d;
+	font-weight: bold;
+	font-size: 20px;
+	list-style: none;
+}
+/*section4****************/
+.section4 li
+{
+	margin-left: 3%;
+	line-height: 2.5;
+	color: #54545d;
+	font-weight: bold;
+	font-size: 20px;
+	list-style: none;
+}
+.summary li
+{
+	color: #32cd32;
+}
+.summary
+{
+	margin-right: 15%;
+}
+/*skill--------------*/
+#skill
+{
+	background: white;
+}
+h2
+{
+	color: rgb(0, 174, 243);
+}
+.skillsumm, .softskill, .hardskill, .skillsumm2
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+.summ1 p, .summ2 p, .summ3 p,.summ4 p, .summ5 p, .summ6 p,.summ7 p, .summ8 p, .summ9 p,.summ10 p, .summ11 p, .summ12 p
+{
+	font-size: 20px;
+	font-weight: 400;
+	color: #54545d;;
+}
+/*work=========================*/
+h4
+{
+	color: orangered;
+	font-size: 32px;
+	font-weight: bold;
+}
+#work
+{
+	background: #343F4F;
+}
+.form, .forms
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.form1, .form2, .form3, .form4
+{
+	margin-left: 25%;
+	background: white;
+	height: 60%;
+	width: 50%;
+}
+.form1 a, .form2 a, .form3 a, .form4 a
+{
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+	font-weight: bolder;
+	color: rgb(251, 232, 80);
+}
+/*contact====================*/
+h5
+{
+	font-size: 36px;
+	font-weight: bolder;
+	color: #FC6D6D;
+}
+.img1
+{
+	margin-left: 25%;
+}
+label
+{
+	font-size: 36px;
+	font-weight: bolder;
+}
+input
+{
+	font-size: 30px;
+}
+#contact
+{
+	background: white;
+}
+.btn
+{
+	font-size: 1.2em;
+	font-weight: 500;
+	text-align: center;
+	outline: none;
+	padding: 10px 25px 10px 25px;
+	background-color: rgb(251, 232, 80);
+	border: none;
+	color: black;
+}
+.btn:hover 
+{
+	background-color: rgb(251, 232, 80) ;
+	cursor: pointer;
+}
+.btn:active {
+  background-color: rgb(251, 232, 80);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.fbform
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+h6
+{
+	font-size: 36px;
+	font-weight: bolder;
+	color: #343F4F;
+}
+.icons
+{
+	font-size: 36px;
+	font-weight: bolder;
+	color: #343f4f;
+}
+.icons:hover
+{
+	cursor: pointer;
+	color: #FC6D6D;
+}
+.address
+{
+	margin-left: 20%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+textarea
+{
+	opacity: .9;
+	font-size: 30px;
+	color: #343F4F;
+}
